@@ -1,0 +1,67 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('assets/fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+}
+
+$font-size-root: 1.1rem;
+$body-font-family: 'Fira Sans';
+$heading-font-family: 'Lato';
+
+$headings:(
+  'display-1': ( 'size': 32px, 'weight': 700, 'line-height': 32px, 'letter-spacing': -0.114286px ),  // configured
+  'h2': ( 'size': 56px, weight: 700, line-height: 1.35, letter-spacing: -.02em ), // configured
+  h3: ( 'size': 45px, weight: 700, line-height: 48px, letter-spacing: normal ),
+  h4: ( 'size': 34px, weight: 700, line-height: 40px, letter-spacing: normal ),
+  h5: ( 'size': 24px, weight: 700, line-height: 32px, letter-spacing: normal ),
+  h6: ( 'size': 20px, weight: 700, line-height: 32px, letter-spacing: normal ),
+  subheading: ( 'size': 16px, weight: 400, color: white ),
+  body-2: ( 'size': 18px, weight: 500 ), // configured
+  body-1: ( 'size': 14px, weight: 400, line-spacing: 16px ), // configured
+  caption: ( 'size': 12px, weight: 400 ), // configured
+  button: ( 'size': 14px, weight: 500)
+);
+
+
+/*
+Buttons
+ */
+$btn-text-transform: none;
+$btn-letter-spacing: 0;
+$btn-font-weight: 900;
+
+$btn-font-sizes: (
+    'x-small': .625rem,
+    'small': .75rem,
+    'default': 1rem,
+    'large': .875rem,
+    'x-large': 1rem
+);
+
+$btn-sizes: (
+    'x-small': 20,
+    'small': 28,
+    'default': 39,
+    'large': 52,
+    'x-large': 60
+);
+
+/*
+Cards
+ */
+$card-elevation: none;
+$card-background-color: 'white';

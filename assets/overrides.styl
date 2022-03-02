@@ -1,0 +1,36 @@
+/*
+ This is the best way right now to override specific Vuetify classes.
+ It must be imported in our default layout, as to make sure it's loaded in after all Vuetify stylesheets
+
+ https://github.com/nuxt-community/vuetify-module/issues/176
+ */
+
+
+/* Inputs */
+>>> .v-text-field // Makes input backgrounds white
+    .v-input__slot
+        background var(--v-white-base) !important
+
+/* Disabled Button styles */
+>>> .theme--light.v-btn.v-btn--disabled.v-btn--has-bg {
+    background-color: var(--v-inactive-base) !important;
+    color: var(--v-white-base) !important;
+    letter-spacing .5px;
+}
+
+/* Card */
+>>> .v-card__title
+    color var(--v-primary-text-base) !important
+
+
+/*
+    Setting default font colors of classes that include said classnames
+*/
+>>> *[class^='display-'],
+>>> *[class*=' display-'],
+>>> *[class^='body-'],
+>>> *[class*=' body-']
+{
+    color: var(--v-primary-text-base) !important;
+}
+

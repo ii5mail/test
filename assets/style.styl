@@ -1,0 +1,168 @@
+/*
+Global CSS Styles
+ */
+
+#app.theme--light, body
+    background var(--v-main-background-base)
+
+*
+    word-break normal
+
+/*
+Animations
+ */
+@keyframes fade_in
+    to
+        opacity 1
+
+.fade-in
+    opacity: 0;
+    animation fade_in .5s 1
+    animation-fill-mode forwards
+
+/*
+Misc
+*/
+.relative
+    position relative !important
+.fixed
+    position fixed !important
+.absolute
+    position absolute !important
+.top
+    top 0
+.bottom
+    bottom 0
+.right
+    right 0
+.left
+    left 0
+
+.fill-width
+    width: 100%
+// Auto Scroll on html
+html
+    overflow-y auto !important
+
+/*
+Font Weights
+ */
+$x-light-weight ?= 100
+$light-weight ?= normal
+$medium-weight ?= 600
+$bold-weight ?= 700
+$heavy-weight ?= 900
+
+.x-light-weight
+    font-weight $x-light-weight !important
+
+.light-weight
+    font-weight $light-weight !important
+
+.medium-weight
+    font-weight $medium-weight !important
+
+.bold-weight
+    font-weight $bold-weight !important
+
+.heavy-weight
+    font-weight $heavy-weight !important
+
+/*
+ Flex Helpers
+*/
+
+.flex-1
+    flex 1 !important
+.flex-0
+    flex 0 !important
+
+/*
+Font Families
+*/
+.roboto
+    font-family roboto
+/*
+Font Sizes
+ */
+
+$xxs-font ?= 12px
+$xs-font ?= 14px
+$small-font ?= 16px
+$medium-font ?= 24px
+$large-font ?= 32px
+$xl-font ?= 36px
+
+$font-18 ?= 18px
+
+// Global Font classes
+.nowrap
+    white-space nowrap
+
+.font-18
+    font-size 18px !important
+.xxs-font
+    font-size $xxs-font !important
+
+.xs-font
+    font-size $xs-font !important
+
+.small-font
+    font-size $small-font !important
+
+.medium-font
+    font-size $medium-font !important
+
+.large-font
+    font-size $large-font !important
+
+.xl-font
+    font-size $xl-font !important
+
+
+// Global Line Height classes
+.lh-12
+    line-height 12px !important
+
+.lh-14
+    line-height 14px !important
+
+.lh-16
+    line-height 16px !important
+
+.lh-18
+    line-height 18px !important
+
+.lh-20
+    line-height 20px !important
+
+.lh-24
+    line-height 24px !important
+
+.lh-28
+    line-height 28px !important
+
+.lh-32
+    line-height 32px !important
+
+.lh-36
+    line-height 36px !important
+
+.lh-40
+    line-height 40px !important
+
+.lh-44
+    line-height 44px !important
+
+.lh-48
+    line-height 48px !important
+
+.lh-50
+    line-height 50px !important
+
+.lh-52
+    line-height 52px !important
+
+.lh-56
+    line-height 56px !important
+
